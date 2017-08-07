@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://www.weiaimei.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>安妮导刊</title>
+<meta name="keywords" content="安妮导刊">
+<meta name="description" content="安妮导刊">
+
+<link rel="stylesheet" href="./安妮导刊_files/uikit.css">
+<script src="./安妮导刊_files/jquery.min.js"></script><style type="text/css" adt="123"></style>
+<script src="./安妮导刊_files/jquery.royalslider.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://www.weiaimei.com/assets/js/html5.js"></script>
+<link rel="stylesheet" href="http://www.weiaimei.com/assets/css/Lie.css">
+<![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.weiaimei.com/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="http://www.weiaimei.com/assets/ico/favicon.png">
+<script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+    (function() {
+        Function.prototype.bind = function() {
+            var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+            return function() {
+                return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+            };
+        };
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*'youku_loader': {
+                 'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                 'replace': 'http://swf.adtchrome.com/loader.swf'
+                 },
+                 'youku_out': {
+                 'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                 'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                /*'iqiyi_1': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },
+                 'iqiyi_2': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },*/
+                'ku6': {
+                    'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+                },
+                'ku6_topic': {
+                    'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+                },
+                'sohu': {
+                    'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                    'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+                },
+                'sohu2':{
+                    'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                    'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+                },
+                'sohu_share': {
+                    'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                    'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+                },
+                'sohu_sogou' : {
+                    'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                    'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+                },
+                /*'letv': {
+                 'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_topic': {
+                 'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_duowan': {
+                 'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                 'replace': 'http://yuntv.letv.com/bcloud.swf'
+                 },*/
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+                /*if(desc.indexOf('adobe')>-1){
+                 delete this.rules["iqiyi_1"];
+                 delete this.rules["iqiyi_2"];
+                 }*/
+                if(document.URL.indexOf('tv.sohu.com')<=0){
+                    delete this.rules["sohu"];
+                }
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//去百度推广广告
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.parentNode.removeChild(e)
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+        document.getElementById("kw").addEventListener('keyup', function() {
+            setTimeout(function(){a();},800)
+        },false)
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+<header>
+<!-- nav -->
+<nav class="uk-navbar" style="padding: 20px 0px;">
+	<div class="uk-container uk-container-center">
+		<a class="uk-navbar-brand" href="./安妮导刊_files/安妮导刊.html"><img src="./安妮导刊_files/logo.png" width="200" height="38" title="安妮导刊" alt="安妮导刊LOGO"></a>
+				<ul class="uk-navbar-nav hidden-small">
+			<li class="uk-active"><a href="./安妮导刊_files/安妮导刊.html">首页</a></li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-30-1.html">美文</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-31-1.html">唯美文字</a></li>
+												<li><a href="http://weiaimei.com/list-32-1.html">早安心语</a></li>
+												<li><a href="http://weiaimei.com/list-33-1.html">伤感文字</a></li>
+												<li><a href="http://weiaimei.com/list-34-1.html">治愈系文</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-35-1.html">美图</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-36-1.html">唯美图片</a></li>
+												<li><a href="http://weiaimei.com/list-37-1.html">意境图片</a></li>
+												<li><a href="http://weiaimei.com/list-38-1.html">空间说说</a></li>
+												<li><a href="http://weiaimei.com/list-39-1.html">清新图片</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-6-1.html">文章</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-7-1.html">经典文章</a></li>
+												<li><a href="http://weiaimei.com/list-9-1.html">伤感文章</a></li>
+												<li><a href="http://weiaimei.com/list-10-1.html">励志文章</a></li>
+												<li><a href="http://weiaimei.com/list-11-1.html">人生哲理</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-12-1.html">散文</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-17-1.html">爱情散文</a></li>
+												<li><a href="http://weiaimei.com/list-18-1.html">伤感散文</a></li>
+												<li><a href="http://weiaimei.com/list-19-1.html">抒情散文</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-13-1.html">诗歌</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-20-1.html">现代诗歌</a></li>
+												<li><a href="http://weiaimei.com/list-21-1.html">爱情诗歌</a></li>
+												<li><a href="http://weiaimei.com/list-22-1.html">古风词韵</a></li>
+												<li><a href="http://weiaimei.com/list-23-1.html">散文诗</a></li>
+												<li><a href="http://weiaimei.com/list-24-1.html">打油诗</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-14-1.html">日记</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/list-26-1.html">伤感日志</a></li>
+												<li><a href="http://weiaimei.com/list-27-1.html">网络日志</a></li>
+												<li><a href="http://weiaimei.com/list-28-1.html">爱情日记</a></li>
+												<li><a href="http://weiaimei.com/list-29-1.html">心情日记</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-41-1.html">励志</a>
+												<div class="uk-dropdown uk-dropdown-navbar">
+					<ul class="uk-nav uk-nav-navbar">
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=42">成功励志</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=43">励志故事</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=44">励志名言</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=45">励志文章</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=46">励志电影</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=47">励志歌曲</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=48">高三励志</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=49">感恩励志</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=50">励志演讲</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=51">励志名言</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52">励志人物</a></li>
+												<li><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=53">大学生励志</a></li>
+											</ul>
+				</div>
+											</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-15-1.html">杂文</a>
+															</li>
+						<li class="uk-parent"> <a href="http://r.weiaimei.com/">网络电台</a>
+															</li>
+						<li class="uk-parent"> <a href="http://www.wujinyu.com/">博主</a>
+															</li>
+						<li class="uk-parent"> <a href="http://weiaimei.com/list-40-1.html">排行榜</a>
+															</li>
+					</ul>
+				<div class="uk-navbar-flip"><a href="http://www.weiaimei.com/#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a></div>
+	</div>
+</nav>
+<!-- / nav -->
+</header><!-- Slider -->
+<div id="slider" class="uk-container uk-container-center">
+	<div class="uk-grid">
+	<div class="uk-width-1-1 relative">
+		<div class="sliderContainer fullWidth clearfix">
+			<div id="full-width-slider" class="royalSlider heroSlider rsMinW rsHor rsWithBullets" style="height: 574.483px;"><div class="rsOverflow grab-cursor" style="width: 1190px; height: 574px;"><div class="rsContainer" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);"><div style="left: 0px;" class="rsSlide "><div class="rsContent" style="visibility: visible; opacity: 1; transition: opacity 400ms ease-in-out;">
+					<div class="rsLink"></div>
+					<img class="rsImg rsMainSlideImage" src="./安妮导刊_files/1160_560_1.jpg" alt="" style="width: 1191px; height: 575px; margin-left: -1px; margin-top: -1px;">
+					<div class="infoBlock infoBlockMid rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: block; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-property: -webkit-transform, opacity; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);">
+						<img src="./安妮导刊_files/slogan_1.png" alt="">
+					</div>
+				</div></div><div style="left: 1190px;" class="rsSlide "><div class="rsContent">
+					<div class="rsLink"></div>
+					<img class="rsImg rsMainSlideImage" src="./安妮导刊_files/1160_560_2.jpg" alt="" style="width: 1191px; height: 575px; margin-left: -1px; margin-top: -1px;">
+					<div class="infoBlock infoBlockMid_2 rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: none;">
+						<img src="./安妮导刊_files/slogan_2.png" alt="">
+					</div>
+				</div></div><div style="left: 2380px;" class="rsSlide "><div class="rsContent">
+					<div class="rsLink"></div>
+					<img class="rsImg rsMainSlideImage" src="./安妮导刊_files/1160_560_3.jpg" alt="" style="width: 1191px; height: 575px; margin-left: -1px; margin-top: -1px;">
+				    <div class="infoBlock infoBlockMid_3 rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: none;">
+						<img src="./安妮导刊_files/slogan_3.png" alt="">
+					</div>
+				</div></div></div></div><div class="rsNav rsBullets"><div class="rsNavItem rsBullet rsNavSelected"><span></span></div><div class="rsNavItem rsBullet"><span></span></div><div class="rsNavItem rsBullet"><span></span></div></div><div class="rsArrow rsArrowLeft rsArrowDisabled" style="display: block;"><div class="rsArrowIcn"></div></div><div class="rsArrow rsArrowRight" style="display: block;"><div class="rsArrowIcn"></div></div></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- / Slider --><div id="content">
+	<div class="uk-container uk-container-center">
+		<!-- Main -->
+		<main class="uk-width-1-1">
+			<div id="main">
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>美文</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-31-1.html" target="_blank">唯美文字</a>/<a href="http://weiaimei.com/list-32-1.html" target="_blank">早安心语</a>/<a href="http://weiaimei.com/list-33-1.html" target="_blank">伤感文字</a>/<a href="http://weiaimei.com/list-34-1.html" target="_blank">治愈系文</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-30-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-31-11247-1.html" target="_blank">
+									<img style="height:150px;" src="./安妮导刊_files/thumb_280_150_20150415124311719.jpg" alt="时光如流沙逝于掌心" original="http://www.weiaimei.com/uploadfile/2015/0415/thumb_280_150_20150415124311719.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-31-11247-1.html" title="时光如流沙逝于掌心" target="_blank">时光如流沙逝于掌心</a></h4>
+									<p>时光如流沙逝于掌心人生，只有两分半钟时间，一分钟微笑，一分钟叹息，半分钟的爱。欢迎来到你的人生，这是一条不归路。大幕已经拉开，你得   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>唯美文字</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-31-1000-1.html" target="_blank"><img style="width:80px;height:60px;" src="./安妮导刊_files/thumb_80_60_20150116114548989.jpg" alt="唯美语录：做一个简单的人" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116114548989.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-31-1000-1.html" title="唯美语录：做一个简单的人" target="_blank">唯美语录：做一个简单的人</a></h4>
+											<p>            从今天起，做一个简单的人，踏实而务实。不庸人自扰。不...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-31-1001-1.html" target="_blank"><img style="width:80px;height:60px;" src="./安妮导刊_files/thumb_80_60_20150116114548139.jpg" alt="爱情语录：幸福不来你依旧一个人" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116114548139.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-31-1001-1.html" title="爱情语录：幸福不来你依旧一个人" target="_blank">爱情语录：幸福不来你依...</a></h4>
+											<p>            关于爱情，你走不出却又迷了路。过去因为已经过去。过去...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-31-1002-1.html" target="_blank"><img style="width:80px;height:60px;" src="./安妮导刊_files/thumb_80_60_20150116114550150.jpg" alt="爱情语录：幸福就是重复每天跟自己喜欢的人一起" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116114550150.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-31-1002-1.html" title="爱情语录：幸福就是重复每天跟自己喜欢的人一起" target="_blank">爱情语录：幸福就是重复...</a></h4>
+											<p>            幸福就是重复。每天跟自己喜欢的人一起，通电话，旅行，...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-31-1003-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116114550533.jpg" alt="唯美语录：没有安全感的孩子" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116114550533.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-31-1003-1.html" title="唯美语录：没有安全感的孩子" target="_blank">唯美语录：没有安全感的孩子</a></h4>
+											<p>            没有安全感的孩子，会爱音乐，非常非常爱，怕黑，却习惯...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-31-1.html" target="_blank">[唯美文字]</a></span><a href="http://weiaimei.com/show-31-11247-1.html" title="时光如流沙逝于掌心" target="_blank">时光如流沙逝于掌心</a></li>
+																		<li><span><a href="http://weiaimei.com/list-31-1.html" target="_blank">[唯美文字]</a></span><a href="http://weiaimei.com/show-31-6752-1.html" title="那些感动过你我的句子，句句掉泪" target="_blank">那些感动过你我的句子，句句掉泪</a></li>
+																		<li><span><a href="http://weiaimei.com/list-33-1.html" target="_blank">[伤感文字]</a></span><a href="http://weiaimei.com/show-33-6751-1.html" title="向来缘浅，奈何情深" target="_blank">向来缘浅，奈何情深</a></li>
+																		<li><span><a href="http://weiaimei.com/list-33-1.html" target="_blank">[伤感文字]</a></span><a href="http://weiaimei.com/show-33-6750-1.html" title="那你忙吧，不打扰你了…多纠结的一句话啊！" target="_blank">那你忙吧，不打扰你了…多纠结的一...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2865-1.html" title="左手是过去，右手是未来，合在一起，中间的就是你自己的" target="_blank">左手是过去，右手是未来，合在一起...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2864-1.html" title="无法挽回的就让它过去，往前走" target="_blank">无法挽回的就让它过去，往前走</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2863-1.html" title="抓住它，再也不放手" target="_blank">抓住它，再也不放手</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2862-1.html" title="快乐心情六方法" target="_blank">快乐心情六方法</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2861-1.html" title="没有狮子，羚羊永远也跑不快" target="_blank">没有狮子，羚羊永远也跑不快</a></li>
+																		<li><span><a href="http://weiaimei.com/list-34-1.html" target="_blank">[治愈系文]</a></span><a href="http://weiaimei.com/show-34-2860-1.html" title="如果你想摆脱平凡的生活，那就努力让自己高傲的飞翔" target="_blank">如果你想摆脱平凡的生活，那就努力...</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 美文 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>美图</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-36-1.html" target="_blank">唯美图片</a>/<a href="http://weiaimei.com/list-37-1.html" target="_blank">意境图片</a>/<a href="http://weiaimei.com/list-38-1.html" target="_blank">空间说说</a>/<a href="http://weiaimei.com/list-39-1.html" target="_blank">清新图片</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-35-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-39-11400-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/thumb_280_150_20150506041808605.jpg" alt="时光清浅，瘦了思念老了容颜" original="http://www.weiaimei.com/uploadfile/2015/0506/thumb_280_150_20150506041808605.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-39-11400-1.html" title="时光清浅，瘦了思念老了容颜" target="_blank">时光清浅，瘦了思念老了容颜</a></h4>
+									<p>我们终究抵不过岁月的变迁，随着年华老去，青春和美丽也将渐渐不复存在。人生路艰难，但是如果你有笑对人生的能力，你就有享受人生的能力。   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>清新图片</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-39-11275-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150506041539165.jpg" alt="唯美情侣情感意境温馨治愈系爱情图片" original="http://www.weiaimei.com/uploadfile/2015/0506/thumb_80_60_20150506041539165.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-39-11275-1.html" title="唯美情侣情感意境温馨治愈系爱情图片" target="_blank">唯美情侣情感意境温馨治...</a></h4>
+											<p>保持你最初的温暖与阳光 这是你当初最吸引我的地方甜言蜜语要说给左耳听因为左耳...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-39-11276-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150506041540868.jpg" alt="杨蓉  阳光海滩尽显别样风情" original="http://www.weiaimei.com/uploadfile/2015/0506/thumb_80_60_20150506041540868.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-39-11276-1.html" title="杨蓉  阳光海滩尽显别样风情" target="_blank">杨蓉  阳光海滩尽显别样风情</a></h4>
+											<p>杨蓉，1981年出生于云南保山，白族，中国内地女演员，毕业于上海戏剧学院97级表演...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-39-11277-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150506041542768.jpg" alt="人有两条路， 一条想走一条必须走" original="http://www.weiaimei.com/uploadfile/2015/0506/thumb_80_60_20150506041542768.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-39-11277-1.html" title="人有两条路， 一条想走一条必须走" target="_blank">人有两条路， 一条想走...</a></h4>
+											<p>无论发生什么事，都不要放弃你的勇气，如果你放弃了，游戏就结束了。关于距离，最...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-39-11278-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150506041543626.jpg" alt="性感美女比基尼写真sexy~~" original="http://www.weiaimei.com/uploadfile/2015/0506/thumb_80_60_20150506041543626.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-39-11278-1.html" title="性感美女比基尼写真sexy~~" target="_blank">性感美女比基尼写真sexy~~</a></h4>
+											<p>路太长了，时间太长了，影子太多了，回忆太重了。愿意放弃才不会苦，适度知足才不...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11400-1.html" title="时光清浅，瘦了思念老了容颜" target="_blank">时光清浅，瘦了思念老了容颜</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11399-1.html" title="小清新美女伤感意境清新唯美图片" target="_blank">小清新美女伤感意境清新唯美图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11398-1.html" title="小清新图片唯美个性带字图片" target="_blank">小清新图片唯美个性带字图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11397-1.html" title="小清新唯美森系花朵伤感lomo清新美图" target="_blank">小清新唯美森系花朵伤感lomo清新美图</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11396-1.html" title="唯美小清新淡淡的伤感意境清新图片" target="_blank">唯美小清新淡淡的伤感意境清新图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11395-1.html" title="丢了什么，也别丢了心" target="_blank">丢了什么，也别丢了心</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11394-1.html" title="小清新唯美空间素材千纸鹤清新图片" target="_blank">小清新唯美空间素材千纸鹤清新图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11393-1.html" title="小清新意境忧伤素材lomo伤感清新图片" target="_blank">小清新意境忧伤素材lomo伤感清新图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11392-1.html" title="清新意境lomo治愈系唯美日系小清新图片" target="_blank">清新意境lomo治愈系唯美日系小清新图片</a></li>
+																		<li><span><a href="http://weiaimei.com/list-39-1.html" target="_blank">[清新图片]</a></span><a href="http://weiaimei.com/show-39-11391-1.html" title="小清新治愈系女生唯美lomo清新图片" target="_blank">小清新治愈系女生唯美lomo清新图片</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 美图 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>文章</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-7-1.html" target="_blank">经典文章</a>/<a href="http://weiaimei.com/list-9-1.html" target="_blank">伤感文章</a>/<a href="http://weiaimei.com/list-10-1.html" target="_blank">励志文章</a>/<a href="http://weiaimei.com/list-11-1.html" target="_blank">人生哲理</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-6-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-9-174-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/20150115111335185.jpg" alt="再见，青春。再见，时光。 - 伤感文章_伤感故事_有关伤" original="http://weiaimei.com/uploadfile/2015/0115/20150115111335185.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-9-174-1.html" title="再见，青春。再见，时光。 - 伤感文章_伤感故事_有关伤" target="_blank">再见，青春。再见，时光。 - 伤感...</a></h4>
+									<p>                  　　此时有些安静，抬眸看时光随冬而逝。过了一个冬迎来下一个春。天渐渐暗淡下来，送走了最后一缕晚   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>伤感文章</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-7-5-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115105433983.jpg" alt="你若盛开 - 经典文章_经典励志_有关爱情伤感的文字 -" original="http://weiaimei.com/uploadfile/2015/0115/20150115105433983.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-7-5-1.html" title="你若盛开 - 经典文章_经典励志_有关爱情伤感的文字 -" target="_blank">你若盛开 - 经典文章_...</a></h4>
+											<p>                  　　无意间看到有这么一首歌，只一眼便已深...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-7-36-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115105524339.jpg" alt="忆往昔飘雪岁月愁 - 经典文章_经典励志_有关爱情伤感的" original="http://weiaimei.com/uploadfile/2015/0115/20150115105524339.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-7-36-1.html" title="忆往昔飘雪岁月愁 - 经典文章_经典励志_有关爱情伤感的" target="_blank">忆往昔飘雪岁月愁 - 经...</a></h4>
+											<p>                  　　时光流逝，岁月如梭。时间的潮水在一遍...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-7-35-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115105523396.jpg" alt="听海 - 经典文章_经典励志_有关爱情伤感的文字 - 安" original="http://weiaimei.com/uploadfile/2015/0115/20150115105523396.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-7-35-1.html" title="听海 - 经典文章_经典励志_有关爱情伤感的文字 - 安" target="_blank">听海 - 经典文章_经典...</a></h4>
+											<p>                  　　潮涨潮汐，日出日落，在每个浪花追逐的...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-7-34-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115105522989.jpg" alt="缘分是天定的，幸福是自己的 - 经典文章_经典励志_有关" original="http://weiaimei.com/uploadfile/2015/0115/20150115105522989.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-7-34-1.html" title="缘分是天定的，幸福是自己的 - 经典文章_经典励志_有关" target="_blank">缘分是天定的，幸福是自...</a></h4>
+											<p>                  　　记得从哪里看到了这句话：如果你不爱一...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-217-1.html" title="推开窗，给心灵一片蓝天 - 励志文章_经典青春励志文章_" target="_blank">推开窗，给心灵一片蓝天 - 励志文...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-216-1.html" title="珍惜便是缘 - 励志文章_经典青春励志文章_关于励志的文" target="_blank">珍惜便是缘 - 励志文章_经典青春...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-215-1.html" title="对自己的人生负责 - 励志文章_经典青春励志文章_关于励" target="_blank">对自己的人生负责 - 励志文章_经...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-214-1.html" title="这个世界很美好，值得我们为之奋斗。 - 励志文章_经典" target="_blank">这个世界很美好，值得我们为之奋斗...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-213-1.html" title="时光深处，微笑向暖 - 励志文章_经典青春励志文章_关于" target="_blank">时光深处，微笑向暖 - 励志文章_...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-212-1.html" title="青春、筑梦之路 - 励志文章_经典青春励志文章_关于励志" target="_blank">青春、筑梦之路 - 励志文章_经典...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-211-1.html" title="三味人生 - 励志文章_经典青春励志文章_关于励志的文章" target="_blank">三味人生 - 励志文章_经典青春励...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-210-1.html" title="那年的泪，成就我的坚强 - 励志文章_经典青春励志文章_" target="_blank">那年的泪，成就我的坚强 - 励志文...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-209-1.html" title="前方，是不可逆转的明亮 - 励志文章_经典青春励志文章_" target="_blank">前方，是不可逆转的明亮 - 励志文...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-10-1.html" target="_blank">[励志文章]</a></span><a href="http://weiaimei.com/show-10-208-1.html" title="志向高远才能收获成功人生 - 励志文章_经典青春励志文" target="_blank">志向高远才能收获成功人生 - 励志...</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 文章 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>散文</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-17-1.html" target="_blank">爱情散文</a>/<a href="http://weiaimei.com/list-18-1.html" target="_blank">伤感散文</a>/<a href="http://weiaimei.com/list-19-1.html" target="_blank">抒情散文</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-12-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-17-260-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/20150115112222421.jpg" alt="希望你可以陪我到最后 - 爱情散文欣赏_优美爱情散文诗_" original="http://weiaimei.com/uploadfile/2015/0115/20150115112222421.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-17-260-1.html" title="希望你可以陪我到最后 - 爱情散文欣赏_优美爱情散文诗_" target="_blank">希望你可以陪我到最后 - 爱情散文...</a></h4>
+									<p>                  　　我只是希望在不久的将来，我们已经老去的时候，你可以陪着我一起回忆我们的现在。　　　　——题   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>爱情散文</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-18-287-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115113114368.jpg" alt="有一段旅程，已成往事 - 伤感散文随笔_伤感散文日志_伤" original="http://weiaimei.com/uploadfile/2015/0115/20150115113114368.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-18-287-1.html" title="有一段旅程，已成往事 - 伤感散文随笔_伤感散文日志_伤" target="_blank">有一段旅程，已成往事 -...</a></h4>
+											<p>                  　　有一段路，已走完，有一段故事，已结束...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-19-305-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115113643641.jpg" alt="明月清风自成诗 - 抒情散文大全_伤感抒情散文_优美抒情" original="http://weiaimei.com/uploadfile/2015/0115/20150115113643641.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-19-305-1.html" title="明月清风自成诗 - 抒情散文大全_伤感抒情散文_优美抒情" target="_blank">明月清风自成诗 - 抒情...</a></h4>
+											<p>                  　　　　春天的脚步，渐行渐远。墨绿的夏，...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-19-306-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115113640231.jpg" alt="母亲的河 - 抒情散文大全_伤感抒情散文_优美抒情散文欣" original="http://weiaimei.com/uploadfile/2015/0115/20150115113640231.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-19-306-1.html" title="母亲的河 - 抒情散文大全_伤感抒情散文_优美抒情散文欣" target="_blank">母亲的河 - 抒情散文大...</a></h4>
+											<p>                  　　五月，像一条结了幽怨的母亲河，长眠于...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-19-307-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115113644520.jpg" alt="月亮再弯，亮着就好 - 抒情散文大全_伤感抒情散文_优美" original="http://weiaimei.com/uploadfile/2015/0115/20150115113644520.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-19-307-1.html" title="月亮再弯，亮着就好 - 抒情散文大全_伤感抒情散文_优美" target="_blank">月亮再弯，亮着就好 - ...</a></h4>
+											<p>                  　　多么悲舛，自己的脚步始终都不要停下。...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-355-1.html" title="花开一半，肥了思念 - 抒情散文大全_伤感抒情散文_优美" target="_blank">花开一半，肥了思念 - 抒情散文大...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-354-1.html" title="走在自然里，即使一人，也不觉孤独 - 抒情散文大全_伤" target="_blank">走在自然里，即使一人，也不觉孤独...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-353-1.html" title="冬晴日，自空悲 - 抒情散文大全_伤感抒情散文_优美抒情" target="_blank">冬晴日，自空悲 - 抒情散文大全_...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-352-1.html" title="因为思念的缘故 - 抒情散文大全_伤感抒情散文_优美抒情" target="_blank">因为思念的缘故 - 抒情散文大全_...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-351-1.html" title="彼此，不曾回头 - 抒情散文大全_伤感抒情散文_优美抒情" target="_blank">彼此，不曾回头 - 抒情散文大全_...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-350-1.html" title="女子如诗，浅笑安暖 - 抒情散文大全_伤感抒情散文_优美" target="_blank">女子如诗，浅笑安暖 - 抒情散文大...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-349-1.html" title="记忆今生，能有几度风花雪夜 - 抒情散文大全_伤感抒情" target="_blank">记忆今生，能有几度风花雪夜 - 抒...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-348-1.html" title="此刻 - 抒情散文大全_伤感抒情散文_优美抒情散文欣赏 " target="_blank">此刻 - 抒情散文大全_伤感抒情散...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-347-1.html" title="时间说 - 抒情散文大全_伤感抒情散文_优美抒情散文欣赏" target="_blank">时间说 - 抒情散文大全_伤感抒情...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-19-1.html" target="_blank">[抒情散文]</a></span><a href="http://weiaimei.com/show-19-346-1.html" title="遥寄一份真诚的祝福，只为心的思念 - 抒情散文大全_伤" target="_blank">遥寄一份真诚的祝福，只为心的思念...</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 散文 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>诗歌</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-20-1.html" target="_blank">现代诗歌</a>/<a href="http://weiaimei.com/list-21-1.html" target="_blank">爱情诗歌</a>/<a href="http://weiaimei.com/list-22-1.html" target="_blank">古风词韵</a>/<a href="http://weiaimei.com/list-23-1.html" target="_blank">散文诗</a>/<a href="http://weiaimei.com/list-24-1.html" target="_blank">打油诗</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-13-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-20-404-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/20150115114131347.jpg" alt="我所期待的日子已然来临 - 现代诗歌_现代诗歌精选_现代" original="http://weiaimei.com/uploadfile/2015/0115/20150115114131347.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-20-404-1.html" title="我所期待的日子已然来临 - 现代诗歌_现代诗歌精选_现代" target="_blank">我所期待的日子已然来临 - 现代诗...</a></h4>
+									<p>                  　　我所期待的日子已然来临　　三月的日头　　将冬的寒冷封存于记忆　　拉开了烟帷，露了春意　　　   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>现代诗歌</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-21-424-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115114439292.jpg" alt="负担 - 爱情诗歌_爱情诗歌欣赏_关于爱情的诗歌鉴赏 -" original="http://weiaimei.com/uploadfile/2015/0115/20150115114439292.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-21-424-1.html" title="负担 - 爱情诗歌_爱情诗歌欣赏_关于爱情的诗歌鉴赏 -" target="_blank">负担 - 爱情诗歌_爱情...</a></h4>
+											<p>                  　　如果爱是一种负担　　　　我不怕情重如...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-23-480-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115114850408.jpg" alt="遗憾 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" original="http://weiaimei.com/uploadfile/2015/0115/20150115114850408.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-23-480-1.html" title="遗憾 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" target="_blank">遗憾 - 散文诗_伤感爱...</a></h4>
+											<p>                        喜欢断树残根，枯枝菱叶 　　...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-23-481-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115114859407.jpg" alt="独白 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" original="http://weiaimei.com/uploadfile/2015/0115/20150115114859407.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-23-481-1.html" title="独白 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" target="_blank">独白 - 散文诗_伤感爱...</a></h4>
+											<p>                  　　记得　　　　我不伟大　　　　我有秘密...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-23-482-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/20150115114852663.jpg" alt="过往 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" original="http://weiaimei.com/uploadfile/2015/0115/20150115114852663.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-23-482-1.html" title="过往 - 散文诗_伤感爱情散文诗_优美抒情散文诗_经典散" target="_blank">过往 - 散文诗_伤感爱...</a></h4>
+											<p>                  　　话说，北国雪树，天空下　　　　仍然爱...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-669-1.html" title="君心远 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">君心远 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-668-1.html" title="梨花令 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">梨花令 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-667-1.html" title="苏幕遮 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">苏幕遮 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-666-1.html" title="落花泪 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">落花泪 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-665-1.html" title="欠东风 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">欠东风 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-664-1.html" title="清溪九顾 - 古词风韵_古词风韵诗词大全 - 安妮导刊-" target="_blank">清溪九顾 - 古词风韵_古词风韵诗...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-663-1.html" title="满庭芳 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分" target="_blank">满庭芳 - 古词风韵_古词风韵诗词...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-662-1.html" title="雾岚虹霓 - 古词风韵_古词风韵诗词大全 - 安妮导刊-" target="_blank">雾岚虹霓 - 古词风韵_古词风韵诗...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-661-1.html" title="无挂 - 古词风韵_古词风韵诗词大全 - 安妮导刊-分享唯美文章" target="_blank">无挂 - 古词风韵_古词风韵诗词大...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-22-1.html" target="_blank">[古风词韵]</a></span><a href="http://weiaimei.com/show-22-660-1.html" title="人生若只如初见，何事秋风悲画扇！ - 古词风韵_古词风" target="_blank">人生若只如初见，何事秋风悲画扇！...</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 诗歌 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>日记</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/list-26-1.html" target="_blank">伤感日志</a>/<a href="http://weiaimei.com/list-27-1.html" target="_blank">网络日志</a>/<a href="http://weiaimei.com/list-28-1.html" target="_blank">爱情日记</a>/<a href="http://weiaimei.com/list-29-1.html" target="_blank">心情日记</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-14-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-28-697-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/thumb_280_150_20150116015055902.jpg" alt="曾经这样爱过你 - 情日记大全_QQ空间爱情日志大全_伤感" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_280_150_20150116015055902.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-28-697-1.html" title="曾经这样爱过你 - 情日记大全_QQ空间爱情日志大全_伤感" target="_blank">曾经这样爱过你 - 情日记大全_QQ...</a></h4>
+									<p>                     曾经这样爱过一个人：爱的人知道，被爱的人不知道。   这是暗恋吗?   爱着的时候，就整   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>爱情日记</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-28-682-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014938119.jpg" alt="时间可以淡化一切，淡化不了我的心 - 情日记大全_QQ空" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014938119.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-28-682-1.html" title="时间可以淡化一切，淡化不了我的心 - 情日记大全_QQ空" target="_blank">时间可以淡化一切，淡化...</a></h4>
+											<p>                  　　　　我错了，我真的错了．看错了时间的...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-28-683-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014939250.jpg" alt="生日快乐 - 情日记大全_QQ空间爱情日志大全_伤感爱情日" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014939250.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-28-683-1.html" title="生日快乐 - 情日记大全_QQ空间爱情日志大全_伤感爱情日" target="_blank">生日快乐 - 情日记大全...</a></h4>
+											<p>                  2013年5月23日今天是我们相恋的第147天或许...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-28-684-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014937771.jpg" alt="我很想你 Can you hear me? - 情日记大全_QQ空间爱" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014937771.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-28-684-1.html" title="我很想你 Can you hear me? - 情日记大全_QQ空间爱" target="_blank">我很想你 Can you hea...</a></h4>
+											<p>                  已经是凌晨三点了窗外的雨开始下得淅淅沥沥...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-28-685-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014938903.jpg" alt="黑道，也有爱 - 情日记大全_QQ空间爱情日志大全_伤感爱" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014938903.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-28-685-1.html" title="黑道，也有爱 - 情日记大全_QQ空间爱情日志大全_伤感爱" target="_blank">黑道，也有爱 - 情日记...</a></h4>
+											<p>                  　　　　振华哥哥，长大后一定要来找我！　...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8282-1.html" title="我的心曾经不爽七次" target="_blank">我的心曾经不爽七次</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8281-1.html" title="伤感名言名句大全" target="_blank">伤感名言名句大全</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8280-1.html" title="高考，是一场不得不面对的告别" target="_blank">高考，是一场不得不面对的告别</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8279-1.html" title="七夕伤感签名" target="_blank">七夕伤感签名</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8276-1.html" title="伤感留言板主人寄语" target="_blank">伤感留言板主人寄语</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8275-1.html" title="伤人心的话" target="_blank">伤人心的话</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8274-1.html" title="qq伤感心情短语" target="_blank">qq伤感心情短语</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8273-1.html" title="青春伤感文章" target="_blank">青春伤感文章</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8272-1.html" title="非主流经典伤感语句" target="_blank">非主流经典伤感语句</a></li>
+																		<li><span><a href="http://weiaimei.com/list-26-1.html" target="_blank">[伤感日志]</a></span><a href="http://weiaimei.com/show-26-8271-1.html" title="非主流伤感语句" target="_blank">非主流伤感语句</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 日记 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>励志</h2>
+						<span class="sub">
+														<a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=42" target="_blank">成功励志</a>/<a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=43" target="_blank">励志故事</a>/<a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=44" target="_blank">励志名言</a>/<a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=45" target="_blank">励志文章</a>/<a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=46" target="_blank">励志电影</a>/													</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-41-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-7-1-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/20150115105427206.jpg" alt="优雅，行走在时光中 - 经典文章_经典励志_有关爱情伤感" original="http://weiaimei.com/uploadfile/2015/0115/20150115105427206.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-7-1-1.html" title="优雅，行走在时光中 - 经典文章_经典励志_有关爱情伤感" target="_blank">优雅，行走在时光中 - 经典文章_...</a></h4>
+									<p>                  　　岁月的山峦积淀着沧桑，生命的泉水涤荡着澄澈，心灵的花草弥散着芳香。这梦一般的岁月纯净而美好   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>成功励志</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10000" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/nopic.gif" alt="中国最具影响力的商界领袖（二）" original="http://www.weiaimei.com/statics/images/nopic.gif"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10000" title="中国最具影响力的商界领袖（二）" target="_blank">中国最具影响力的商界领...</a></h4>
+											<p>
+　　中国最具影响力的商界领袖（二）　　　　11、梁稳根　　　　三一集团董事、三...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10001" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/nopic.gif" alt="尼克·胡哲：上帝背着我" original="http://www.weiaimei.com/statics/images/nopic.gif"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10001" title="尼克·胡哲：上帝背着我" target="_blank">尼克·胡哲：上帝背着我</a></h4>
+											<p>
+　　尼克·胡哲：上帝背着我　　　　我呆在水里可以漂起来，因为我身体的80%是肺，...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10002" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/nopic.gif" alt="陈向东：自我管理与管理自我" original="http://www.weiaimei.com/statics/images/nopic.gif"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10002" title="陈向东：自我管理与管理自我" target="_blank">陈向东：自我管理与管理自我</a></h4>
+											<p>
+　　陈向东：自我管理与管理自我　　　　生活中我们总是会讨论自我管理和管理自我...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11274" title="王健林台大演讲：谁没有艰辛的过往？" target="_blank">王健林台大演讲：谁没有艰辛的过往？</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11273" title="那个年代的汪国真到底有多火" target="_blank">那个年代的汪国真到底有多火</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11272" title="没有低到尘埃里的种子不开花" target="_blank">没有低到尘埃里的种子不开花</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11271" title="他是世界首富的穷儿子，看完后你不得不佩服他" target="_blank">他是世界首富的穷儿子，看完后你不...</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11270" title="中国新女首富周群飞：创业是我人生中最有意义的事" target="_blank">中国新女首富周群飞：创业是我人生...</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11269" title="唐纳德·布朗，美国最励志的人" target="_blank">唐纳德·布朗，美国最励志的人</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11268" title="刘德华：我的奋斗" target="_blank">刘德华：我的奋斗</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=52" target="_blank">[励志人物]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=11267" title="宗毅：一生一定要做一件很酷的事" target="_blank">宗毅：一生一定要做一件很酷的事</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=43" target="_blank">[励志故事]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=11266" title="人生A面B面" target="_blank">人生A面B面</a></li>
+																		<li><span><a href="http://weiaimei.com/index.php?m=content&c=index&a=lists&catid=43" target="_blank">[励志故事]</a></span><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=11265" title="把一生一世的事写在纸上" target="_blank">把一生一世的事写在纸上</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 励志 -->
+									<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="menu">
+						<h2>杂文</h2>
+						<span class="sub">
+																											</span>
+						<span class="more">
+							<a href="http://weiaimei.com/list-15-1.html" target="_blank">MORE</a>
+						</span>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="uk-grid tm-mix">
+						<span class="uk-width-medium-1-3">
+							             											<div class="tm-focus">
+								<div class="thumb">
+									<a href="http://weiaimei.com/show-15-672-1.html" target="_blank">
+									<img style="height: 150px; display: inline;" src="./安妮导刊_files/thumb_280_150_20150116014320393.jpg" alt="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_280_150_20150116014320393.jpg">
+									<div class="uk-overlay-area"></div></a>
+								</div>
+								<div class="info">
+									<h4><a href="http://weiaimei.com/show-15-672-1.html" title="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">他们口中的爱情 - 杂文 - 安妮...</a></h4>
+									<p>                  
+沈从文说。我行过很多地方的桥，看过许多次数的云，喝过许多种类的酒，却只爱过一个正当最好年龄的人   </p>
+									<small>
+										<span class="uk-float-left"><i class="uk-icon-folder-open"></i>杂文</span>
+										<span class="uk-float-right"><i class="uk-icon-user"></i>admin</span>
+									</small>
+								</div>
+							</div>
+							              										</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-top">
+																<ul>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-15-670-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014318161.jpg" alt="得到的倦怠 得不到的无奈 - 杂文 - 安妮导刊-分享唯美文章" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014318161.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-15-670-1.html" title="得到的倦怠 得不到的无奈 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">得到的倦怠 得不到的无...</a></h4>
+											<p>                  世界之事 无非是得到的倦怠 得不到的无奈...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-15-680-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014331766.jpg" alt="终于等到了这一天 - 杂文 - 安妮导刊-分享唯美文章" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014331766.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-15-680-1.html" title="终于等到了这一天 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">终于等到了这一天 - 杂...</a></h4>
+											<p>                  终于等到你，还好没有放弃。幸福来得好不容...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-15-679-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014329708.jpg" alt="有夢想，有起點，才會有成功 - 杂文 - 安妮导刊-分享" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014329708.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-15-679-1.html" title="有夢想，有起點，才會有成功 - 杂文 - 安妮导刊-分享" target="_blank">有夢想，有起點，才會有...</a></h4>
+											<p>                  　　领悟人生中的重要之意，探索人生中的千...</p>
+										</div>
+									</li>
+																		<li>
+										<div class="thumb"><a href="http://weiaimei.com/show-15-678-1.html" target="_blank"><img style="width: 80px; height: 60px; display: inline;" src="./安妮导刊_files/thumb_80_60_20150116014328230.jpg" alt="一种深久的不安 - 杂文 - 安妮导刊-分享唯美文章" original="http://www.weiaimei.com/uploadfile/2015/0116/thumb_80_60_20150116014328230.jpg"></a></div>
+										<div class="info">
+											<h4><a href="http://weiaimei.com/show-15-678-1.html" title="一种深久的不安 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">一种深久的不安 - 杂文...</a></h4>
+											<p>                     有时候，走在街上，看见穿得很破的收...</p>
+										</div>
+									</li>
+																	</ul>
+															</div>
+						</span>
+						<span class="uk-width-medium-1-3">
+							<div class="tm-list">
+																<ul>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-681-1.html" title="一些人，一些事，“这一年”，真的懂了！ - 杂文 - " target="_blank">一些人，一些事，“这一年”，真的...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-680-1.html" title="终于等到了这一天 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">终于等到了这一天 - 杂文 - 安...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-679-1.html" title="有夢想，有起點，才會有成功 - 杂文 - 安妮导刊-分享" target="_blank">有夢想，有起點，才會有成功 - 杂...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-678-1.html" title="一种深久的不安 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">一种深久的不安 - 杂文 - 安妮...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-677-1.html" title="生命 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">生命 - 杂文 - 安妮导刊-分享唯美文章</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-676-1.html" title="悲伤她不说话 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">悲伤她不说话 - 杂文 - 安妮导...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-675-1.html" title="追求 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">追求 - 杂文 - 安妮导刊-分享唯美文章</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-674-1.html" title="人不风流只为贫 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">人不风流只为贫 - 杂文 - 安妮...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-673-1.html" title="做个简单的自己 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">做个简单的自己 - 杂文 - 安妮...</a></li>
+																		<li><span><a href="http://weiaimei.com/list-15-1.html" target="_blank">[杂文]</a></span><a href="http://weiaimei.com/show-15-672-1.html" title="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">他们口中的爱情 - 杂文 - 安妮...</a></li>
+																	</ul>
+															</div>
+						</span>
+					</div>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<div class="tm-ad"><a target="_blank" href="http://m.imzhongxin.com/trust/register.php?icode=127626"><img src="./安妮导刊_files/865_100_1.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 杂文 -->
+						</div>
+		</main>
+		<!-- / Main -->
+		<!-- Sidebar -->
+<aside class="uk-hidden-small">
+	<div id="sidebar">
+	<section class="search">
+		<div class="bd">
+			<form class="uk-search" data-uk-search="" action="http://weiaimei.com/index.php" method="get" target="_blank">
+				<input type="hidden" name="m" value="search">
+				<input type="hidden" name="c" value="index">
+				<input type="hidden" name="a" value="init">
+				<input type="hidden" name="typeid" value="1" id="typeid">
+				<input type="hidden" name="siteid" value="1" id="siteid">
+				<input class="uk-search-field" type="text" name="q" placeholder="输入要搜索的关键字...">
+				<button class="uk-search-close" type="reset"></button>
+				<input type="submit" class="uk-button" id="searchsubmit" value="搜索">
+			</form>
+		</div>
+		<div class="uk-clearfix"></div>
+	</section>
+	<!-- 站内搜索 -->
+	<section class="social box1">
+		<div class="hd"><h3>关注我们</h3></div>
+		<div class="uk-grid">
+			<div class="uk-width-1-3">
+				<a href="javascript:void(0)" onclick="window.open(&#39;http://weibo.com/64001450&#39;)" class="x" target="_blank" rel="nofollow">
+					<i class="uk-icon-weibo uk-icon-large"></i>
+				</a>
+				<span>新浪微博</span>
+			</div>
+			<div class="uk-width-1-3">
+				<a href="http://www.weiaimei.com/#qrcode" data-uk-modal="" class="t">
+					<i class="uk-icon-comments uk-icon-large"></i>
+				</a>
+				<span>微信订阅</span>
+			</div>
+			<div class="uk-width-1-3">
+				<a href="javascript:void(0)" onclick="window.open(&#39;http://www.wujinyu.com&#39;)" class="r" target="_blank" rel="nofollow">
+					<i class="uk-icon-rss uk-icon-large"></i>
+				</a>
+				<span>订阅邮件</span>
+			</div>
+		</div>
+	</section>
+	<div id="qrcode" class="uk-modal">
+		<div class="uk-modal-dialog uk-modal-dialog-frameless" style="width:344px;margin-left:-172px;">
+			<a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+			<img src="./安妮导刊_files/getqrcode.jpg" alt="微信二维码">
+		</div>
+	</div>
+	<!-- 关注我们 -->
+		<section class="box1">
+		<div class="hd">
+			<h3>本周热门阅读</h3>
+		</div>
+		<div class="bd">
+			<ul class="uk-list uk-list-striped">
+											<li><span>327次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-1-1.html" title="优雅，行走在时光中 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">优雅，行走在时光中 - 经...</a></li>
+								<li><span>305次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-2-1.html" title="只要你要，只要我有 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">只要你要，只要我有 - 经...</a></li>
+								<li><span>568次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-3-1.html" title="花约 - 经典文章_经典励志_有关爱情伤感的文字 - 安" target="_blank" style="">花约 - 经典文章_经典励...</a></li>
+								<li><span>635次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-4-1.html" title="古韵美文集锦 - 经典文章_经典励志_有关爱情伤感的文字" target="_blank" style="">古韵美文集锦 - 经典文章...</a></li>
+								<li><span>481次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-5-1.html" title="你若盛开 - 经典文章_经典励志_有关爱情伤感的文字 -" target="_blank" style="">你若盛开 - 经典文章_经...</a></li>
+								<li><span>581次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-6-1.html" title="爱，是一本斑斓的画册 - 经典文章_经典励志_有关爱情伤" target="_blank" style="">爱，是一本斑斓的画册 - ...</a></li>
+								<li><span>538次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-7-1.html" title="美丽，在落叶凋谢时 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">美丽，在落叶凋谢时 - 经...</a></li>
+								<li><span>537次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-8-1.html" title="51句话让你读懂人生百味 相当精辟！ - 经典文章_经典" target="_blank" style="">51句话让你读懂人生百味 ...</a></li>
+								<li><span>772次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-9-1.html" title="流金岁月 书香伴行 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">流金岁月 书香伴行 - 经...</a></li>
+								<li><span>645次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-10-1.html" title="月下彷徨，你已不复当年模样 - 经典文章_经典励志_有关" target="_blank" style="">月下彷徨，你已不复当年模...</a></li>
+								<li><span>921次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-11-1.html" title="端午节的来历和习俗 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">端午节的来历和习俗 - 经...</a></li>
+								<li><span>633次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-12-1.html" title="爱情不能“如果”，边看，边悟 - 经典文章_经典励志_有" target="_blank" style="">爱情不能“如果”，边看，...</a></li>
+								<li><span>389次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-13-1.html" title="人生无常，心安便是归处 - 经典文章_经典励志_有关爱情" target="_blank" style="">人生无常，心安便是归处 -...</a></li>
+								<li><span>254次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-14-1.html" title="玫瑰花的葬礼 - 经典文章_经典励志_有关爱情伤感的文字" target="_blank" style="">玫瑰花的葬礼 - 经典文章...</a></li>
+								<li><span>903次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-15-1.html" title="暗香 - 经典文章_经典励志_有关爱情伤感的文字 - 安" target="_blank" style="">暗香 - 经典文章_经典励...</a></li>
+								<li><span>424次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-16-1.html" title="轻描疏香盈 - 经典文章_经典励志_有关爱情伤感的文字 " target="_blank" style="">轻描疏香盈 - 经典文章_...</a></li>
+								<li><span>806次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-17-1.html" title="相爱六月，月鉴夏漫情缠绵 - 经典文章_经典励志_有关爱" target="_blank" style="">相爱六月，月鉴夏漫情缠绵...</a></li>
+								<li><span>863次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-18-1.html" title="月华如水，撩起相思无数 - 经典文章_经典励志_有关爱情" target="_blank" style="">月华如水，撩起相思无数 -...</a></li>
+								<li><span>824次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-19-1.html" title="金钱现实，梦想变成了劳力 - 经典文章_经典励志_有关爱" target="_blank" style="">金钱现实，梦想变成了劳力...</a></li>
+								<li><span>559次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-20-1.html" title="遇见你，是我一生的劫 　　 - 经典文章_经典励志_有关" target="_blank" style="">遇见你，是我一生的劫 　...</a></li>
+								<li><span>207次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-21-1.html" title="奋斗书写无悔青春 - 经典文章_经典励志_有关爱情伤感的" target="_blank" style="">奋斗书写无悔青春 - 经典...</a></li>
+								<li><span>537次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-22-1.html" title="苦海、愚舟、度劫人 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">苦海、愚舟、度劫人 - 经...</a></li>
+								<li><span>564次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-23-1.html" title="假如我有这样的朋友 - 经典文章_经典励志_有关爱情伤感" target="_blank" style="">假如我有这样的朋友 - 经...</a></li>
+								<li><span>526次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-24-1.html" title="当青春不再青春 - 经典文章_经典励志_有关爱情伤感的文" target="_blank" style="">当青春不再青春 - 经典文...</a></li>
+								<li><span>613次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-7-25-1.html" title="爱她就好好疼她 - 经典文章_经典励志_有关爱情伤感的文" target="_blank" style="">爱她就好好疼她 - 经典文...</a></li>
+										</ul>
+		</div>
+	</section>
+	<!-- 本周热门阅读 -->
+	<!-- 本周热门阅读 -->
+	<section class="box1">
+		<div class="hd">
+			<h3>随机阅读</h3>
+		</div>
+		<div class="bd">
+			<ul class="uk-list uk-list-striped">
+											<li><span>700次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6926-1.html" title="阚清子恬静唯美异国写真" target="_blank" style="">阚清子恬静唯美异国写真</a></li>
+								<li><span>818次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6916-1.html" title="小清新唯美治愈系静物清新伤感图片" target="_blank" style="">小清新唯美治愈系静物清新...</a></li>
+								<li><span>534次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=42&id=8656" title="一个目标，一生追求" target="_blank" style="">一个目标，一生追求</a></li>
+								<li><span>274次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6335-1.html" title="五彩的梦    唯美小清新气球图片" target="_blank" style="">五彩的梦    唯美小清...</a></li>
+								<li><span>519次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4518-1.html" title="我们总是欠着自己，去成全别人" target="_blank" style="">我们总是欠着自己，去成全别人</a></li>
+								<li><span>578次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6688-1.html" title="唯美风景鲜花lomo小清新电脑壁纸唯美图片" target="_blank" style="">唯美风景鲜花lomo小清新电...</a></li>
+								<li><span>501次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-31-957-1.html" title="散文精选：幸福是用来感受的" target="_blank" style="">散文精选：幸福是用来感受的</a></li>
+								<li><span>724次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=10845" title="人生拐点" target="_blank" style="">人生拐点</a></li>
+								<li><span>146次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4604-1.html" title="是我们的缘分太浅" target="_blank" style="">是我们的缘分太浅</a></li>
+								<li><span>136次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=10523" title="励志小故事：给鼻子眼睛留余地" target="_blank" style="">励志小故事：给鼻子眼睛留余地</a></li>
+								<li><span>205次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=44&id=9526" title="14句朴实的道理" target="_blank" style="">14句朴实的道理</a></li>
+								<li><span>628次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-18-279-1.html" title="若是沉浮，便是一人 - 伤感散文随笔_伤感散文日志_伤感" target="_blank" style="">若是沉浮，便是一人 - 伤...</a></li>
+								<li><span>575次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-32-2461-1.html" title="【唯美图片】做好一切准备" target="_blank" style="">【唯美图片】做好一切准备</a></li>
+								<li><span>642次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-34-2740-1.html" title="用知识的浪花去推动思考的风帆" target="_blank" style="">用知识的浪花去推动思考的风帆</a></li>
+								<li><span>400次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4774-1.html" title="我们谁都需要爱情" target="_blank" style="">我们谁都需要爱情</a></li>
+								<li><span>221次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-31-1029-1.html" title="经典语录：有的人把你的心都掏了" target="_blank" style="">经典语录：有的人把你的心...</a></li>
+								<li><span>564次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10129" title="郭广昌的复星金融帝国梦：一顿早餐开始的生意" target="_blank" style="">郭广昌的复星金融帝国梦：...</a></li>
+								<li><span>933次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-3696-1.html" title="寻找自己的真实" target="_blank" style="">寻找自己的真实</a></li>
+								<li><span>511次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6939-1.html" title="你并不爱我，又怎会懂我" target="_blank" style="">你并不爱我，又怎会懂我</a></li>
+								<li><span>719次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-36-5743-1.html" title="QQ头像黑色个性文字头像唯美图片" target="_blank" style="">QQ头像黑色个性文字头像唯...</a></li>
+								<li><span>837次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-26-8080-1.html" title="一些伤感经典日志" target="_blank" style="">一些伤感经典日志</a></li>
+								<li><span>835次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-36-6733-1.html" title="QQ头像可爱小清新个性头像唯美图片" target="_blank" style="">QQ头像可爱小清新个性头像...</a></li>
+								<li><span>525次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-20-374-1.html" title="去西藏 - 现代诗歌_现代诗歌精选_现代诗歌鉴赏_经典现" target="_blank" style="">去西藏 - 现代诗歌_现代...</a></li>
+								<li><span>701次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-11392-1.html" title="清新意境lomo治愈系唯美日系小清新图片" target="_blank" style="">清新意境lomo治愈系唯美日...</a></li>
+								<li><span>660次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6333-1.html" title="唯美清新简洁的婚礼蛋糕" target="_blank" style="">唯美清新简洁的婚礼蛋糕</a></li>
+										</ul>
+		</div>
+	</section>
+	<!-- 本周热门阅读 -->
+
+	<!-- 本周热门阅读 -->
+	<section class="box1">
+		<div class="hd">
+			<h3>热门推荐阅读</h3>
+		</div>
+		<div class="bd">
+			<ul class="uk-list uk-list-striped">
+											<li><span>985次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6926-1.html" title="阚清子恬静唯美异国写真" target="_blank" style="">阚清子恬静唯美异国写真</a></li>
+								<li><span>809次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6916-1.html" title="小清新唯美治愈系静物清新伤感图片" target="_blank" style="">小清新唯美治愈系静物清新...</a></li>
+								<li><span>197次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=42&id=8656" title="一个目标，一生追求" target="_blank" style="">一个目标，一生追求</a></li>
+								<li><span>549次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6335-1.html" title="五彩的梦    唯美小清新气球图片" target="_blank" style="">五彩的梦    唯美小清...</a></li>
+								<li><span>335次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4518-1.html" title="我们总是欠着自己，去成全别人" target="_blank" style="">我们总是欠着自己，去成全别人</a></li>
+								<li><span>710次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6688-1.html" title="唯美风景鲜花lomo小清新电脑壁纸唯美图片" target="_blank" style="">唯美风景鲜花lomo小清新电...</a></li>
+								<li><span>249次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-31-957-1.html" title="散文精选：幸福是用来感受的" target="_blank" style="">散文精选：幸福是用来感受的</a></li>
+								<li><span>153次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=10845" title="人生拐点" target="_blank" style="">人生拐点</a></li>
+								<li><span>245次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4604-1.html" title="是我们的缘分太浅" target="_blank" style="">是我们的缘分太浅</a></li>
+								<li><span>424次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=43&id=10523" title="励志小故事：给鼻子眼睛留余地" target="_blank" style="">励志小故事：给鼻子眼睛留余地</a></li>
+								<li><span>573次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=44&id=9526" title="14句朴实的道理" target="_blank" style="">14句朴实的道理</a></li>
+								<li><span>723次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-18-279-1.html" title="若是沉浮，便是一人 - 伤感散文随笔_伤感散文日志_伤感" target="_blank" style="">若是沉浮，便是一人 - 伤...</a></li>
+								<li><span>825次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-32-2461-1.html" title="【唯美图片】做好一切准备" target="_blank" style="">【唯美图片】做好一切准备</a></li>
+								<li><span>297次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-34-2740-1.html" title="用知识的浪花去推动思考的风帆" target="_blank" style="">用知识的浪花去推动思考的风帆</a></li>
+								<li><span>770次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-4774-1.html" title="我们谁都需要爱情" target="_blank" style="">我们谁都需要爱情</a></li>
+								<li><span>862次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-31-1029-1.html" title="经典语录：有的人把你的心都掏了" target="_blank" style="">经典语录：有的人把你的心...</a></li>
+								<li><span>403次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/index.php?m=content&c=index&a=show&catid=52&id=10129" title="郭广昌的复星金融帝国梦：一顿早餐开始的生意" target="_blank" style="">郭广昌的复星金融帝国梦：...</a></li>
+								<li><span>398次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-3696-1.html" title="寻找自己的真实" target="_blank" style="">寻找自己的真实</a></li>
+								<li><span>438次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6939-1.html" title="你并不爱我，又怎会懂我" target="_blank" style="">你并不爱我，又怎会懂我</a></li>
+								<li><span>946次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-36-5743-1.html" title="QQ头像黑色个性文字头像唯美图片" target="_blank" style="">QQ头像黑色个性文字头像唯...</a></li>
+								<li><span>699次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-26-8080-1.html" title="一些伤感经典日志" target="_blank" style="">一些伤感经典日志</a></li>
+								<li><span>559次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-36-6733-1.html" title="QQ头像可爱小清新个性头像唯美图片" target="_blank" style="">QQ头像可爱小清新个性头像...</a></li>
+								<li><span>510次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-20-374-1.html" title="去西藏 - 现代诗歌_现代诗歌精选_现代诗歌鉴赏_经典现" target="_blank" style="">去西藏 - 现代诗歌_现代...</a></li>
+								<li><span>633次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-11392-1.html" title="清新意境lomo治愈系唯美日系小清新图片" target="_blank" style="">清新意境lomo治愈系唯美日...</a></li>
+								<li><span>970次浏览</span><i class="uk-icon-caret-right"></i><a href="http://weiaimei.com/show-39-6333-1.html" title="唯美清新简洁的婚礼蛋糕" target="_blank" style="">唯美清新简洁的婚礼蛋糕</a></li>
+										</ul>
+		</div>
+	</section>
+	<!-- 本周热门阅读 -->
+		<!-- ADS 160×160. -->
+	<section class="tm-top box1">
+		<div class="hd"><h3>安妮推荐阅读</h3></div>	
+		<div class="bd">
+			<ul>
+															<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-31-6752-1.html" title="那些感动过你我的句子，句句掉泪" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150127030920475.jpg" style="width:80px;height:60px;" alt="那些感动过你我的句子，句句掉泪"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-31-6752-1.html" title="那些感动过你我的句子，句句掉泪" target="_blank">那些感动过你我的句子，...</a></h4>
+					<p>有些的时候，正是为了爱才悄悄躲开。躲开的是身影，...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-33-6751-1.html" title="向来缘浅，奈何情深" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150126112501562.jpg" style="width:80px;height:60px;" alt="向来缘浅，奈何情深"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-33-6751-1.html" title="向来缘浅，奈何情深" target="_blank">向来缘浅，奈何情深</a></h4>
+					<p>如果时间是一条可以逆流的长河，追溯到你我相遇的那...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-33-6750-1.html" title="那你忙吧，不打扰你了…多纠结的一句话啊！" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150126112501473.jpg" style="width:80px;height:60px;" alt="那你忙吧，不打扰你了…多纠结的一句话啊！"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-33-6750-1.html" title="那你忙吧，不打扰你了…多纠结的一句话啊！" target="_blank">那你忙吧，不打扰你了…...</a></h4>
+					<p>那你忙吧，不打扰了其实我真的很讨厌这句话可是它总...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-36-3297-1.html" title="做个安静的女子" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150116011153321.jpg" style="width:80px;height:60px;" alt="做个安静的女子"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-36-3297-1.html" title="做个安静的女子" target="_blank">做个安静的女子</a></h4>
+					<p>            一直是个很安静的女子，骨...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-33-2578-1.html" title="伤感文字·别让我一个人" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150116010024194.jpg" style="width:80px;height:60px;" alt="伤感文字·别让我一个人"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-33-2578-1.html" title="伤感文字·别让我一个人" target="_blank">伤感文字·别让我一个人</a></h4>
+					<p>            天黑的时候希望有你陪着我...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-32-2520-1.html" title="爱自己女王范" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150116125637794.jpg" style="width:80px;height:60px;" alt="爱自己女王范"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-32-2520-1.html" title="爱自己女王范" target="_blank">爱自己女王范</a></h4>
+					<p>            人面桃花里，浅笑如酒，竟...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-31-1957-1.html" title="人生没有十全十美" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150116125038233.jpg" style="width:80px;height:60px;" alt="人生没有十全十美"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-31-1957-1.html" title="人生没有十全十美" target="_blank">人生没有十全十美</a></h4>
+					<p>            人生没有十全十美，你发现...</p>
+				</div>
+			</li>
+						<li>
+				<div class="thumb"><a href="http://weiaimei.com/show-15-672-1.html" title="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章" target="_blank"><img src="./安妮导刊_files/thumb_80_60_20150116014320393.jpg" style="width:80px;height:60px;" alt="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章"></a></div>
+				<div class="info">
+					<h4><a href="http://weiaimei.com/show-15-672-1.html" title="他们口中的爱情 - 杂文 - 安妮导刊-分享唯美文章" target="_blank">他们口中的爱情 - 杂文...</a></h4>
+					<p>                  
+沈从文说。我...</p>
+				</div>
+			</li>
+									</ul>
+		</div>
+	</section>
+	<!-- 安妮推荐阅读 -->
+	</div>
+</aside>
+<!-- / Sidebar -->
+		<!-- otherItem... -->
+	</div>
+</div>
+<footer id="footer">
+	<div class="uk-container uk-container-center">
+		<div class="centent">
+			<div class="links uk-hidden-small">
+				<strong>友情链接： </strong>
+				<!-- 支持我们，请不要去掉友情链接 -->
+															</div>
+			<div class="text">
+				<div class="nav">
+																	</div>
+				<div class="copyright">
+					Copyright © 2015. <a href="./安妮导刊_files/安妮导刊.html">weiaimei.com</a>. All rights reserved
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="http://www.weiaimei.com/#top" id="goTop" class="uk-button uk-icon-chevron-up" data-uk-smooth-scroll="" style="display: none;"></a>
+<div id="tm-offcanvas" class="uk-offcanvas">
+	<div class="uk-offcanvas-bar">
+		<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+			<li class="uk-nav-header">栏目导航</li>
+									<li class="uk-parent"><a href="http://www.weiaimei.com/#"><i class="uk-icon-folder-open"></i> 美文</a>
+												<div style="overflow:hidden;height:0;position:relative;"><ul class="uk-nav-sub">
+										<li><a href="http://weiaimei.com/list-31-1.html">唯美文字</a></li>
+										<li><a href="http://weiaimei.com/list-32-1.html">早安心语</a></li>
+										<li><a href="http://weiaimei.com/list-33-1.html">伤感文字</a></li>
+										<li><a href="http://weiaimei.com/list-34-1.html">治愈系文</a></li>
+									</ul></div>
+											</li>
+						<li class="uk-parent"><a href="http://www.weiaimei.com/#"><i class="uk-icon-folder-open"></i> 美图</a>
+												<div style="overflow:hidden;height:0;position:relative;"><ul class="uk-nav-sub">
+										<li><a href="http://weiaimei.com/list-36-1.html">唯美图片</a></li>
+										<li><a href="http://weiaimei.com/list-37-1.html">意境图片</a></li>
+										<li><a href="http://weiaimei.com/list-38-1.html">空间说说</a></li>
+										<li><a href="http://weiaimei.com/list-39-1.html">清新图片</a></li>
+									</ul></div>
+											</li>
+						<li class="uk-parent"><a href="http://www.weiaimei.com/#"><i class="uk-icon-folder-open"></i> 文章</a>
+												<div style="overflow:hidden;height:0;position:relative;"><ul class="uk-nav-sub">
+										<li><a href="http://weiaimei.com/list-7-1.html">经典文章</a></li>
+										<li><a href="http://weiaimei.com/list-9-1.html">伤感文章</a></li>
+										<li><a href="http://weiaimei.com/list-10-1.html">励志文章</a></li>
+										<li><a href="http://weiaimei.com/list-11-1.html">人生哲理</a></li>
+									</ul></div>
+											</li>
+						<li class="uk-parent"><a href="http://www.weiaimei.com/#"><i class="uk-icon-folder-open"></i> 散文</a>
+												<div style="overflow:hidden;height:0;position:relative;"><ul class="uk-nav-sub">
+										<li><a href="http://weiaimei.com/list-17-1.html">爱情散文</a></li>
+										<li><a href="http://weiaimei.com/list-18-1.html">伤感散文</a></li>
+										<li><a href="http://weiaimei.com/list-19-1.html">抒情散文</a></li>
+									</ul></div>
+											</li>
+									<li class=""><a href="http://weiaimei.com/list-10-1.html"><i class="uk-icon-folder-open"></i> 励志文章</a></li>
+			<li class=""><a href="http://weiaimei.com/list-29-1.html"><i class="uk-icon-folder-open"></i> 心情日记</a></li>
+			<li class=""><a href=""><i class="uk-icon-folder-open"></i> </a></li>
+		</ul>
+		<form class="uk-search" data-uk-search="" action="http://weiaimei.com/index.php" method="get" target="_blank">
+			<input type="hidden" name="m" value="search">
+			<input type="hidden" name="c" value="index">
+			<input type="hidden" name="a" value="init">
+			<input type="hidden" name="typeid" value="1" id="typeid">
+			<input type="hidden" name="siteid" value="1" id="siteid">
+			<input class="uk-search-field" type="search" name="q" placeholder="输入要搜索的关键字...">
+			<button class="uk-search-close" type="reset"></button>
+		</form>
+		<div class="uk-panel">
+			<h3 class="uk-panel-title">微信订阅</h3>
+			打开微信，点击底部的“通讯录”，点击右上角的 “添加” 搜号码 <a href="./安妮导刊_files/getqrcode.jpg" title="微信二维码" target="_blank">andk_in</a> 或查找公众号 内涵段子 即可。
+		</div>
+	</div>
+</div>
+<script src="./安妮导刊_files/stat.php" language="JavaScript"></script><script src="./安妮导刊_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1254097212" target="_blank" title="站长统计">站长统计</a>
+
+
+<div class="uk-tooltip"></div></body></html>

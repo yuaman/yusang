@@ -1,0 +1,349 @@
+html,body,h1,h2,h3,h4,h5,h6,p,input{
+	margin: 0;
+	padding: 0;
+	font-family: "瀵邦喛钂嬮梿鍛寸拨";
+	font-size: 12px;
+}
+ul,ol,li,dl,dt,dd{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.clear:after{
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+/* 濞夈劑鍣�*/
+.layout{
+	width: 1190px;
+	margin: 0 auto;
+}
+/************婢舵挳鍎寸�鑹板焻閸栵拷************/
+.header{
+	padding: 15px 0;
+	background-color: #D1D1D1;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+}
+.header .menu{
+	float: right;
+}
+.header .menu li{
+	float: left;
+	font-size: 18px;
+	padding: 3px 12px;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.header .menu li:hover,.header .menu .current{
+	background-color: #1B29FF;	
+	border-radius: 5px;
+}
+.header .menu li:hover a,.header .menu .current a{
+	color: #FFF;
+}
+.header .menu li a{
+	color: #141414;	
+}
+
+/***************鏉烆喗鎸�*************/
+.slider {
+	margin: 88px 0 10px;
+	position: relative;
+}
+.slider img{
+	width: 1190px;
+}
+.slider .bar {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+}
+.slider .bar li{
+	float: left;
+	margin-left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background-color: #FFF;
+}
+
+/******************閸愬懎顔愰崠锟�*******************/
+.content {
+}
+
+.content .cnt-main{
+	width: 900px;
+	float: left;
+}
+
+/********************閺傚洨鐝烽崠绡絛*********************/
+.content .cnt-main .article .hd{
+	border-bottom: 2px solid #9A1212;
+	position: relative;
+}
+.content .cnt-main .article .hd h3{
+	background-color: #9A1212;
+	font-size: 14px;
+	color: #FFF;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.content .cnt-main .article .hd .menu {
+	position: absolute;
+	left: 80px;
+	bottom: 5px;
+}
+.content .cnt-main .article .hd .menu li{
+	float: left;
+	font-size: 12px;
+}
+.content .cnt-main .article .hd .menu .split{
+	margin:0 5px;
+}
+.content .cnt-main .article .hd .more{
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #666;
+}
+/******************閺傚洨鐝烽崠绡礵****************/
+.content .cnt-main .article .bd .cnt{
+	width: 288px;
+	height: 324px;
+	float: left;
+	margin-top: 15px;
+}
+.content .cnt-main .article .bd .m{
+	margin-left: 18px;
+	margin-right: 18px;
+}
+.content .cnt-main .article .bd .m dl,.yusang dl{
+	height: 81px;
+	background-color: #dedede;
+	position: relative;
+}
+.content .cnt-main .article .bd .m .contentarticlemdlactive{
+	background-color: #F00;
+	border-radius: 7px;
+}
+.yusang dl{
+	border-bottom: 1px #dedede dotted;
+	background-color: #FFF;
+}
+.content .cnt-main .article .bd .m .ou{
+	background-color: #ccc;
+}
+.content .cnt-main .article .bd .m dl .pic,.yusang dl .pic{
+	position: absolute;
+	width: 80px;
+	height: 60px;
+	top: 10px;
+	left:10px;
+}
+.yusang dl .pic{
+	left: 0;
+}
+.content .cnt-main .article .bd .m dl .pic img,.yusang dl .pic img{
+	width: 80px;
+	height: 60px;
+}
+.content .cnt-main .article .bd .m dl .title,.yusang dl .title{
+	height: 20px;
+	width: 180px;
+	line-height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.yusang dl .title{
+	right: 0;
+}
+.content .cnt-main .article .bd .m dl .title a,.yusang dl .title a{
+	font-weight: 700;
+	font-size: 14px;
+	color: #333;
+}
+.content .cnt-main .article .bd .m dl .title a:hover,.yusang dl .title a:hover{
+	color: #F00;
+}
+.content .cnt-main .article .bd .m dl .summary,.yusang dl .summary{
+	height: 40px;
+	width: 180px;
+	line-height: 20px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.yusang dl .summary{
+	right: 0;
+}
+.content .cnt-main .article .bd .l,.content .cnt-main .article .bd .l .pic{
+	position: relative;
+}
+.content .cnt-main .article .bd .l .pic img{
+	width: 288px;
+	height: 165px;
+}
+.content .cnt-main .article .bd .l .pic .title{
+	height: 30px;
+	width: 273px;
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	bottom: 0;
+	line-height: 30px;
+	padding-left: 15px;
+	overflow: hidden;
+}
+.content .cnt-main .article .bd .l .pic .title a{
+	color: #FFF;
+}
+.content .cnt-main .article .bd .l .summary{
+	padding: 10px;
+	line-height: 16px;
+	overflow: hidden;
+}
+.content .cnt-main .article .bd .l .desc{
+	position: absolute;
+	bottom: 0;
+	background-color: #CCC;
+	height: 35px;
+	width: 100%;
+	line-height: 35px;
+}
+.content .cnt-main .article .bd .l .desc .category{
+	margin-left: 25px;
+}
+.content .cnt-main .article .bd .l .desc .auth{
+	float: right;
+	margin-right: 15px;
+}
+.content .cnt-main .article .bd .r li{
+
+	height: 31.4px;
+	line-height: 31px;
+	padding-left: 15px;
+	border-bottom: 1px #dedede dotted;
+}
+/*************楠炲灝鎲�************/
+.content .cnt-main .adv{
+	margin: 15px 0;
+}
+/********************************************************************/
+.content .cnt-sub{
+	width: 280px;
+	height: 500px;
+	float: right;
+}
+/***************閹兼粎鍌�***************/
+.search-l {
+	background-color: #980C0C;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.search-l .sform input{
+	border-width: 0;
+}
+.search-l .sform input.txt{
+	width: 220px;
+	height: 30px;
+	padding: 0 5px;
+}
+.search-l .sform input.btn{
+	width: 40px;
+	height: 30px;
+	background-color: #333;
+	color: #FFF;
+}
+/************閸忚櫕鏁為崸妤�姽*************/
+.sub-block {
+	border:1px #dedede solid;
+	padding: 5px;
+	border-top:3px #980C0C solid;
+	margin-bottom: 10px;
+}
+.sub-block .hd{
+	height: 35px;
+	line-height: 35px;
+	border-bottom:1px #dedede dotted;
+}
+.sub-block .hd h3{
+	font-size: 16px;
+	color: #333;
+}
+.follow .bd li{
+	width:78px;
+	float: left;
+	margin: 10px 5px;
+}
+.follow .bd li .pic{
+	height: 78px;
+}
+.follow .bd li.sina .pic{
+	background-color: #316DB7;
+}
+.follow .bd li.wechat .pic{
+	background-color: #17A8DD;
+}
+.follow .bd li.mail .pic{
+	background-color: #FF9204;
+}
+.follow .bd li .title{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+/****************閹烘帟顢�***************/
+.hot li{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px #ccc solid;
+}
+.hot li.ou{
+	background-color: #efefef;
+}
+.hot li a{
+	color: #333;
+	margin-left: 30px;
+}
+.hot li a:hover{
+	color: #F00;
+}
+.hot li span{
+	float: right;
+
+}
+/****************************************/
+.footer{
+	margin: 10px 0 30px;
+	border-top: 2px #980C0C solid;
+}
+.footer .friends-link {
+	padding: 15px;
+}
+.footer .friends-link a{
+	color: #000;
+	margin: 0 5px;
+}
+.footer .copy{
+	text-align: center;
+}
+
+/*************表单样式*****************/
+.txt{
+	width:280px;
+	height:35px;
+	border:1px #ccc solid;
+}
